@@ -13,8 +13,8 @@
 <title>Quantum · Cavenaghi — Mobilidade sem limites</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<script src="./lib/gsap.min.js"></script>
-<script src="./lib/ScrollTrigger.min.js"></script>
+<script src="./gsap.min.js"></script>
+<script src="./ScrollTrigger.min.js"></script>
 <script type="importmap">
 {
   "imports": {
@@ -182,7 +182,7 @@
     </div>
 
     <div style="display:flex;flex-direction:column;align-items:center;gap:16px;opacity:0;animation:qFadeUp .9s cubic-bezier(.2,.8,.2,1) 1.85s forwards">
-      <img src="./img/logo-cavenaghi-branco.png" alt="Cavenaghi — A potência do movimento" style="height:clamp(46px,7vw,62px);width:auto;display:block"fetchpriority="high" decoding="async"/>
+      <img src="./logo-cavenaghi-branco.png" alt="Cavenaghi — A potência do movimento" style="height:clamp(46px,7vw,62px);width:auto;display:block"fetchpriority="high" decoding="async"/>
       <div style="width:132px;height:2px;background:rgba(255,255,255,0.16);overflow:hidden">
         <div style="height:100%;background:#FAAB2E;transform-origin:left;animation:qBarGrow 1s cubic-bezier(.4,0,.2,1) 2s forwards"></div>
       </div>
@@ -215,15 +215,15 @@
       <div id="stage" style="position:absolute;inset:0">
         <div id="chairMount" style="position:absolute;inset:0"></div>
         <div id="webglFallback" style="display:none;position:absolute;inset:0;place-items:center;text-align:center;padding:14vh 8vw">
-          <img src="./img/quantum-front.png" alt="Cadeira motorizada Quantum" style="max-width:100%;max-height:100%;object-fit:contain"loading="lazy" decoding="async"/>
+          <img src="./quantum-front.png" alt="Cadeira motorizada Quantum" style="max-width:100%;max-height:100%;object-fit:contain"loading="lazy" decoding="async"/>
         </div>
       </div>
     </div>
 
     <div id="heroMark" style="position:absolute;top:28px;left:40px;z-index:7;display:flex;align-items:center;gap:22px">
-      <img src="./img/logo-cavenaghi-azul.png" alt="Cavenaghi — A potência do movimento" style="height:62px;width:auto;display:block"fetchpriority="high" decoding="async"/>
+      <img src="./logo-cavenaghi-azul.png" alt="Cavenaghi — A potência do movimento" style="height:62px;width:auto;display:block"fetchpriority="high" decoding="async"/>
       <span style="width:1px;height:34px;background:rgba(23,33,54,0.16);display:inline-block"></span>
-      <img src="./img/logo-quantum-azul.png" alt="Quantum Rehab" style="height:44px;width:auto;display:block"fetchpriority="high" decoding="async"/>
+      <img src="./logo-quantum-azul.png" alt="Quantum Rehab" style="height:44px;width:auto;display:block"fetchpriority="high" decoding="async"/>
     </div>
 
     <!-- ░ TEXTO: sobreposto, sai com fade + blur. Sem animação de altura. ░ -->
@@ -325,7 +325,7 @@
         <div style="position:relative;width:100%;aspect-ratio:1/1.06;display:grid;place-items:center">
           <div style="position:absolute;width:84%;height:84%;border-radius:50%;background:radial-gradient(circle,rgba(250,171,46,0.15) 0%,rgba(250,171,46,0) 68%)"></div>
           <div id="benefitRing" style="position:absolute;width:78%;height:78%;border-radius:50%;border:1px dashed rgba(23,33,54,0.16)"></div>
-          <img id="benefitImg" data-cursor="img" src="./img/quantum-side.png" alt="Cadeira Quantum vista lateral com elevação de assento" style="position:relative;width:96%;object-fit:contain;filter:drop-shadow(0 30px 42px rgba(23,33,54,0.2));will-change:transform"loading="lazy" decoding="async"/>
+          <img id="benefitImg" data-cursor="img" src="./quantum-side.png" alt="Cadeira Quantum vista lateral com elevação de assento" style="position:relative;width:96%;object-fit:contain;filter:drop-shadow(0 30px 42px rgba(23,33,54,0.2));will-change:transform"loading="lazy" decoding="async"/>
         </div>
       </div>
 
@@ -365,7 +365,7 @@
 
     <div id="techGrid" style="display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center">
       <div id="techJoyWrap" data-cursor="img" style="position:relative;border-radius:22px;background:linear-gradient(155deg,rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.12);padding:44px;overflow:hidden;backdrop-filter:blur(6px)">
-        <img id="techJoy" src="./img/quantum-joystick.png" alt="Módulo de comando programável Quantum" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
+        <img id="techJoy" src="./quantum-joystick.png" alt="Módulo de comando programável Quantum" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
         <div style="position:absolute;left:44px;bottom:32px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.62)">Comando NE+ · perfis programáveis</div>
       </div>
 
@@ -403,7 +403,7 @@
         <p class="qReveal" style="font-size:15.5px;color:rgba(255,255,255,0.64);max-width:420px">Da mesa de trabalho ao descanso do fim do dia: a cadeira muda de posição junto com você.</p>
       </div>
       <div class="qReveal" data-cursor="img" style="border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05)">
-        <img id="techPos" src="./img/quantum-positions.png" alt="Sobreposição das posições de assento da Quantum" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
+        <img id="techPos" src="./quantum-positions.png" alt="Sobreposição das posições de assento da Quantum" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
       </div>
     </div>
   </div>
@@ -480,7 +480,7 @@
 
     <div style="position:relative">
       <div data-cursor="img" style="position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;border:1px solid rgba(23,33,54,0.09);box-shadow:0 30px 70px rgba(23,33,54,0.13)">
-        <img id="humanImg" src="./img/user-lobby.png" alt="Homem utilizando cadeira motorizada Quantum em um ambiente corporativo" style="width:100%;height:100%;object-fit:cover;display:block;will-change:transform"loading="lazy" decoding="async"/>
+        <img id="humanImg" src="./user-lobby.png" alt="Homem utilizando cadeira motorizada Quantum em um ambiente corporativo" style="width:100%;height:100%;object-fit:cover;display:block;will-change:transform"loading="lazy" decoding="async"/>
         <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,33,54,0) 45%,rgba(23,33,54,0.58) 100%)"></div>
         <div style="position:absolute;left:28px;bottom:26px;color:#fff">
           <div style="font-family:'Schibsted Grotesk',sans-serif;font-weight:400;font-size:20px;letter-spacing:-0.02em">Autonomia real, todos os dias.</div>
@@ -531,7 +531,7 @@
         <h3 class="qReveal" style="font-family:'Schibsted Grotesk',sans-serif;font-weight:300;font-size:clamp(25px,2.6vw,36px);line-height:1.14;letter-spacing:-0.028em;color:#172136;margin-bottom:18px">Uma trajetória construída com <span style="color:#FAAB2E">quem precisa se mover.</span></h3>
         <p class="qReveal" style="font-size:15.5px;color:#5A6377;margin-bottom:30px">Começamos adaptando carros para quem queria voltar a dirigir. Hoje somos uma operação nacional que avalia, entrega e continua por perto depois da venda.</p>
         <div class="qReveal" data-cursor="img" style="border-radius:18px;overflow:hidden;border:1px solid rgba(23,33,54,0.09);box-shadow:0 22px 48px rgba(23,33,54,0.1)">
-          <img id="aboutImg" src="./img/user-corridor.png" alt="Usuário Quantum circulando com autonomia" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
+          <img id="aboutImg" src="./user-corridor.png" alt="Usuário Quantum circulando com autonomia" style="width:100%;display:block;will-change:transform"loading="lazy" decoding="async"/>
         </div>
       </div>
 
@@ -582,24 +582,24 @@
     <div style="position:absolute;right:0;top:0;bottom:0;width:140px;background:linear-gradient(270deg,#FAFBFD 0%,rgba(250,251,253,0) 100%);z-index:3;pointer-events:none"></div>
     <div id="logoTrack" style="display:flex;gap:22px;will-change:transform">
       <div class="lgSet" style="display:flex;gap:22px;padding-right:22px">
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-einstein.png" alt="Hospital Israelita Albert Einstein" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-sirio-libanes.png" alt="Hospital Sírio-Libanês" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-oswaldo-cruz.png" alt="Hospital Alemão Oswaldo Cruz" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-aacd.png" alt="AACD" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-espaco-mundi.png" alt="Espaço Mundi" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-alegra.png" alt="Alegra Espaço Terapêutico" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-get-moving.png" alt="Get Moving" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-mark.png" alt="Clínica parceira" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-einstein.png" alt="Hospital Israelita Albert Einstein" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-sirio-libanes.png" alt="Hospital Sírio-Libanês" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-oswaldo-cruz.png" alt="Hospital Alemão Oswaldo Cruz" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-aacd.png" alt="AACD" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-espaco-mundi.png" alt="Espaço Mundi" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-alegra.png" alt="Alegra Espaço Terapêutico" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-get-moving.png" alt="Get Moving" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-mark.png" alt="Clínica parceira" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
       </div>
       <div class="lgSet" style="display:flex;gap:22px;padding-right:22px">
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-einstein.png" alt="Hospital Israelita Albert Einstein" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-sirio-libanes.png" alt="Hospital Sírio-Libanês" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-oswaldo-cruz.png" alt="Hospital Alemão Oswaldo Cruz" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-aacd.png" alt="AACD" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-espaco-mundi.png" alt="Espaço Mundi" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-alegra.png" alt="Alegra Espaço Terapêutico" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-get-moving.png" alt="Get Moving" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
-        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./img/p-mark.png" alt="Clínica parceira" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-einstein.png" alt="Hospital Israelita Albert Einstein" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-sirio-libanes.png" alt="Hospital Sírio-Libanês" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-oswaldo-cruz.png" alt="Hospital Alemão Oswaldo Cruz" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-aacd.png" alt="AACD" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-espaco-mundi.png" alt="Espaço Mundi" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-alegra.png" alt="Alegra Espaço Terapêutico" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-get-moving.png" alt="Get Moving" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
+        <div class="lgCard" data-cursor="img" style="flex:none;width:220px;height:132px;display:flex;align-items:center;justify-content:center;padding:26px;background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:16px;box-shadow:0 4px 16px rgba(23,33,54,0.05);transition:transform .4s,box-shadow .4s"><img src="./p-mark.png" alt="Clínica parceira" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.62;transition:filter .4s,opacity .4s"loading="lazy" decoding="async"/></div>
       </div>
     </div>
   </div>
@@ -666,7 +666,7 @@
 
     <div id="tGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
       <div class="tCard" style="background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(23,33,54,0.05);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s" style-hover="transform:translateY(-6px);box-shadow:0 28px 56px rgba(23,33,54,0.12)">
-        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./img/user-corridor.png" alt="Rafael, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
+        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./user-corridor.png" alt="Rafael, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
         <div style="padding:30px 28px">
           <div style="color:#8A5E06;font-size:13px;letter-spacing:0.12em;margin-bottom:16px">★★★★★</div>
           <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:300;font-size:17.5px;line-height:1.5;letter-spacing:-0.01em;color:#172136;margin-bottom:22px">Voltei a sair sozinho. Parece pequeno, mas mudou tudo: trabalho, faculdade, ver os amigos.</p>
@@ -677,7 +677,7 @@
         </div>
       </div>
       <div class="tCard" style="background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(23,33,54,0.05);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s" style-hover="transform:translateY(-6px);box-shadow:0 28px 56px rgba(23,33,54,0.12)">
-        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./img/user-lobby.png" alt="Marcelo, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
+        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./user-lobby.png" alt="Marcelo, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
         <div style="padding:30px 28px">
           <div style="color:#8A5E06;font-size:13px;letter-spacing:0.12em;margin-bottom:16px">★★★★★</div>
           <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:300;font-size:17.5px;line-height:1.5;letter-spacing:-0.01em;color:#172136;margin-bottom:22px">O que me marcou foi a avaliação. Não me venderam uma cadeira — montaram a minha.</p>
@@ -688,7 +688,7 @@
         </div>
       </div>
       <div class="tCard" style="background:#fff;border:1px solid rgba(23,33,54,0.08);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(23,33,54,0.05);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s" style-hover="transform:translateY(-6px);box-shadow:0 28px 56px rgba(23,33,54,0.12)">
-        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./img/user-living.png" alt="Paulo, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
+        <div data-cursor="img" style="height:230px;overflow:hidden"><img src="./user-living.png" alt="Paulo, usuário Quantum" style="width:100%;height:100%;object-fit:cover;display:block"loading="lazy" decoding="async"/></div>
         <div style="padding:30px 28px">
           <div style="color:#8A5E06;font-size:13px;letter-spacing:0.12em;margin-bottom:16px">★★★★★</div>
           <p style="font-family:'Schibsted Grotesk',sans-serif;font-weight:300;font-size:17.5px;line-height:1.5;letter-spacing:-0.01em;color:#172136;margin-bottom:22px">Tive um problema no comando e resolveram em dois dias. Suporte separa promessa de resultado.</p>
